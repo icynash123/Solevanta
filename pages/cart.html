@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Solevanta</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="header-container">
+            <a href="home.html" class="logo">Solev<span>anta</span></a>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="cart.html">Cart</a>
+            </nav>
+            <div class="auth-links">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="register.html" class="signup-btn">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Page -->
+    <div class="cart-container">
+        <h1>Shopping Cart</h1>
+
+        <div class="cart-items">
+            <div class="cart-item">
+                <div class="cart-item-image">👟</div>
+                <div class="cart-item-details">
+                    <h4>Comfort Cloud Slippers</h4>
+                    <p>Size: S</p>
+                </div>
+                <div class="cart-item-price">$39.99</div>
+                <div class="cart-item-quantity">
+                    <button onclick="decreaseQuantity()">−</button>
+                    <span style="width: 30px; display: flex; align-items: center; justify-content: center;">1</span>
+                    <button onclick="increaseQuantity()">+</button>
+                </div>
+                <a href="#" class="remove-item">Remove</a>
+            </div>
+
+            <div class="cart-item">
+                <div class="cart-item-image">🩴</div>
+                <div class="cart-item-details">
+                    <h4>Summer Breeze Sandals</h4>
+                    <p>Size: M</p>
+                </div>
+                <div class="cart-item-price">$49.99</div>
+                <div class="cart-item-quantity">
+                    <button onclick="decreaseQuantity()">−</button>
+                    <span style="width: 30px; display: flex; align-items: center; justify-content: center;">1</span>
+                    <button onclick="increaseQuantity()">+</button>
+                </div>
+                <a href="#" class="remove-item">Remove</a>
+            </div>
+
+            <div class="cart-item">
+                <div class="cart-item-image">👞</div>
+                <div class="cart-item-details">
+                    <h4>Urban Step Shoes</h4>
+                    <p>Size: L</p>
+                </div>
+                <div class="cart-item-price">$79.99</div>
+                <div class="cart-item-quantity">
+                    <button onclick="decreaseQuantity()">−</button>
+                    <span style="width: 30px; display: flex; align-items: center; justify-content: center;">1</span>
+                    <button onclick="increaseQuantity()">+</button>
+                </div>
+                <a href="#" class="remove-item">Remove</a>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>$169.97</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span>$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Tax</span>
+                <span>$13.60</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total</span>
+                <span>$183.57</span>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+            <a href="products.html" style="display: block; text-align: center; margin-top: 16px; color: #666666; text-decoration: none; font-size: 13px; font-weight: 600;">
+                ← Continue Shopping
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Solevanta</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="terms.html">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Solevanta. All rights reserved. | Handcrafted with care.</p>
+        </div>
+    </footer>
+
+    <script>
+        function increaseQuantity() {
+            alert('Quantity increased');
+        }
+
+        function decreaseQuantity() {
+            alert('Quantity decreased');
+        }
+
+        function checkout() {
+            alert('Redirecting to checkout... In a real scenario, you would need to log in first.');
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>

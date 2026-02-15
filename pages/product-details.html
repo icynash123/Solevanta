@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Solevanta</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="header-container">
+            <a href="home.html" class="logo">Solev<span>anta</span></a>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="cart.html">Cart</a>
+            </nav>
+            <div class="auth-links">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="register.html" class="signup-btn">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Detail -->
+    <div class="product-detail-container">
+        <div class="product-detail-wrapper">
+            <div class="product-detail-image">👟</div>
+            <div class="product-detail-info">
+                <h1>Comfort Cloud Slippers</h1>
+                <div class="product-detail-price">$39.99</div>
+                
+                <div class="product-description">
+                    <p>
+                        Experience ultimate comfort with our Comfort Cloud Slippers. Designed with premium memory foam and a soft fleece lining, these slippers provide exceptional support for your feet throughout the day. Perfect for relaxing at home or slipping on during your morning routine.
+                    </p>
+                    <p style="margin-top: 16px;">
+                        <strong>Features:</strong>
+                    </p>
+                    <ul style="margin-left: 20px; margin-top: 8px;">
+                        <li>Premium memory foam cushioning</li>
+                        <li>Soft fleece lining for warmth</li>
+                        <li>Anti-slip sole for safety</li>
+                        <li>Breathable materials</li>
+                        <li>Machine washable</li>
+                    </ul>
+                </div>
+
+                <div class="size-selection">
+                    <label>Select Size</label>
+                    <div class="sizes">
+                        <button class="size-btn">XS</button>
+                        <button class="size-btn active">S</button>
+                        <button class="size-btn">M</button>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn">XL</button>
+                    </div>
+                </div>
+
+                <button class="cta-btn" onclick="addToCart()">Add to Cart</button>
+
+                <div style="margin-top: 32px; padding-top: 32px; border-top: 1px solid #f0f0f0;">
+                    <p style="font-size: 13px; color: #999999; margin-bottom: 12px;">
+                        <strong>SKU:</strong> SLP-001
+                    </p>
+                    <p style="font-size: 13px; color: #999999; margin-bottom: 12px;">
+                        <strong>Category:</strong> Slippers
+                    </p>
+                    <p style="font-size: 13px; color: #999999;">
+                        <strong>Shipping:</strong> Free shipping on orders over $50
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 80px; padding-top: 80px; border-top: 1px solid #f0f0f0;">
+            <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 24px; color: #000000;">Customer Reviews</h2>
+            <p style="color: #999999;">No reviews yet. Be the first to review this product!</p>
+        </div>
+
+        <div style="margin-top: 40px; text-align: center;">
+            <a href="products.html" style="color: #000000; text-decoration: none; font-weight: 600; display: inline-block; padding: 8px 0; border-bottom: 2px solid #000000;">
+                ← Back to Products
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Solevanta</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="terms.html">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Solevanta. All rights reserved. | Handcrafted with care.</p>
+        </div>
+    </footer>
+
+    <script>
+        function addToCart() {
+            alert('Product added to cart!');
+        }
+
+        // Make size buttons clickable
+        document.querySelectorAll('.size-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
